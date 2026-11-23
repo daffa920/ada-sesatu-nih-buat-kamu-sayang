@@ -1,0 +1,14 @@
+Taruh file media kamu di folder assets ini dengan nama berikut:
+
+flowers.mp4      -> video untuk halaman Beautiful Flowers
+love.jpg         -> foto untuk halaman I Love You
+memory-1.jpg     -> foto pertama di Our Memories
+memory-2.jpg     -> foto kedua di Our Memories
+memory-3.jpg     -> foto ketiga di Our Memories
+
+Kalau nama file berbeda, ubah nilai src di index.html agar sesuai.
+Contoh:
+<video src="assets/flowers.mp4">
+<img src="assets/love.jpg">
+
+File media tidak disertakan karena kamu perlu memasukkan video dan foto milikmu sendiri.

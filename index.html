@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4efe7">
+  <title>A Sweet Surprise For You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-note">a sweet surprise from my boyfriend handsome <span>♡</span></div>
+  <main class="site-shell">
+    <header class="mini-header">
+      <a class="monogram" href="#" aria-label="Kembali ke awal" data-home>♡</a>
+      <span class="header-caption">made with love, just for you</span>
+      <button class="sound-toggle" id="soundToggle" aria-label="Putar atau jeda musik" title="Putar / jeda musik">♫</button>
+      <audio id="birthdayMusic" src="lagu untuk sayangku.mp3" autoplay loop preload="auto"></audio>
+    </header>
+
+    <section class="screen active" id="home">
+      <div class="hero-card">
+        <span class="eyebrow">a little something for</span>
+        <div class="flower flower-one">✿</div>
+        <div class="flower flower-two">❀</div>
+        <h1>Happy<br><em>Birthday Sayangku💝</em></h1>
+        <p class="hero-name" id="heroName">My Sweetheart</p>
+        <p class="small-copy">Hari ini adalah hari yang sangat spesial bagi kamu, sayangku.</p>
+        <button class="primary-btn" data-go="gate">Open Your Gift <span>↗</span></button>
+        <div class="hero-foot">scroll less, smile more ♡</div>
+      </div>
+    </section>
+
+    <section class="screen" id="gate">
+      <div class="paper-card gate-card">
+        <span class="eyebrow">one little secret</span>
+        <h2>Before you enter...</h2>
+        <p class="body-copy">Ada sesuatu yang harus kamu tahu dulu. Masukkan kata kunci kecil untuk membuka hadiah ini.</p>
+        <div class="lock-illustration">♡</div>
+        <form id="passwordForm" class="password-form">
+          <input id="passwordInput" type="password" placeholder="Kata kunci..." autocomplete="off" required>
+          <button class="primary-btn" type="submit">Unlock <span>♡</span></button>
+        </form>
+        <p class="hint">Psst... coba tebak tanggal jadian kita</p>
+        <p class="error-message" id="passwordError" aria-live="polite"></p>
+        <button class="text-btn" data-go="home">← Back</button>
+      </div>
+    </section>
+
+    <section class="screen" id="menu">
+      <div class="menu-intro">
+        <span class="eyebrow">your little birthday world</span>
+        <h2>Pilih Kata Kunci</h2>
+        <p>untuk membuka hadiah kecil dariku ♡</p>
+      </div>
+      <div class="gift-grid">
+        <button class="gift-card" data-page="flowers"><span class="gift-icon">✿</span><b>Beautiful Flowers</b><small>something pretty for you</small></button>
+        <button class="gift-card" data-page="journey"><span class="gift-icon">⌖</span><b>Our Little Journey</b><small>places & little moments</small></button>
+        <button class="gift-card" data-page="love"><span class="gift-icon">♡</span><b>I Love You</b><small>a note from my heart</small></button>
+        <button class="gift-card" data-page="special"><span class="gift-icon">✧</span><b>Why You're Special</b><small>things I adore about you</small></button>
+        <button class="gift-card" data-page="memories"><span class="gift-icon">▧</span><b>Our Memories</b><small>little moments to keep</small></button>
+        <button class="gift-card" data-page="wish"><span class="gift-icon">☾</span><b>Make a Wish</b><small>close your eyes & wish</small></button>
+      </div>
+      <button class="text-btn" data-go="home">← Back to cover</button>
+    </section>
+
+    <section class="screen" id="flowers">
+      <article class="content-card split">
+        <div class="flowers-media">
+          <video class="flowers-video" src="bunga.mp4" autoplay muted loop playsinline controls>
+            Browser kamu tidak mendukung pemutaran video.
+          </video>
+        </div>
+        <div class="content-copy">
+          <span class="eyebrow">a little bouquet</span><h2>Beautiful<br><em>Flowers</em></h2>
+          <p class="body-copy">Mungkin bunga di samping bisa di ibaratkan dengan keindahan cinta kita berdua yang selalu tumbuh dan berkembang. Aku harap kita bisa terus sebagai bunga yang selalu mekar dalam hati kita. Dan jangan ada ulat yang dapat mengganggu keindahan ini.</p>
+          <p class="signature">with love, always ♡</p>
+        </div>
+      </article>
+      <button class="text-btn" data-go="menu">← Back to gifts</button>
+    </section>
+
+    <section class="screen" id="journey">
+      <article class="content-card">
+        <span class="eyebrow">our map of little moments</span><h2>Our Little <em>Journey</em></h2>
+        <div class="route">
+          <div class="route-stop"><span class="pin">♥</span><div><b>Bekasi</b><small>where a little story begins</small></div></div>
+          <div class="route-line"></div>
+          <div class="route-stop"><span class="pin">♥</span><div><b>Bandung</b><small>a place for another lovely memory</small></div></div>
+        </div>
+        <p class="body-copy centered">Ini bukan tentang seberapa jauh kita pergi, tapi tentang hal-hal kecil yang membuat setiap perjalanan kita terasa berarti.</p>
+      </article>
+      <button class="text-btn" data-go="menu">← Back to gifts</button>
+    </section>
+
+    <section class="screen" id="love">
+      <article class="content-card split">
+        <div class="love-photo-area">
+          <img class="love-photo" src="foto7.jpeg" alt="Foto spesial kita">
+        </div>
+        <div class="content-copy">
+          <span class="eyebrow">a note for you</span><h2><em>I Love You</em></h2>
+          <p class="body-copy">Terima kasih sudah selalu hadir dalam hidupku dan selalu membuat hari-hariku lebih indah. Aku mungkin tidak selalu pandai merangkai kata, tapi aku berharap kamu selalu tahu bahwa kamu sangat berarti dalam hidupku. Semoga aku bisa terus menjadi salah satu alasan kecil di balik senyummu.</p>
+          <p class="signature">untuk pacarku yang selalu cantik ♡</p>
+        </div>
+      </article>
+      <button class="text-btn" data-go="menu">← Back to gifts</button>
+    </section>
+
+    <section class="screen" id="special">
+      <article class="content-card">
+        <span class="eyebrow">a list made just for you</span><h2>Kenapa Kamu <em>Spesial Banget?</em></h2>
+        <div class="reason-grid">
+          <div><span>01</span><b>Your smile</b><p>Senyummu selalu punya cara untuk membangkitkan semua semangatku yang tertinggal.</p></div>
+          <div><span>02</span><b>Your kindness</b><p>Kebaikan kecil yang selalu kamu lakukan punya arti yang sangat besar di dalam hidupku.</p></div>
+          <div><span>03</span><b>Just being you</b><p>Tetaplah jadi diri kamu sendiri dan jangan menjadi orang lain untuk terlihat istimewa karena dirimu saja sudah istimewa di mataku.</p></div>
+        </div>
+      </article>
+      <button class="text-btn" data-go="menu">← Back to gifts</button>
+    </section>
+
+    <section class="screen" id="memories">
+      <article class="content-card">
+        <span class="eyebrow">keepsakes & snapshots</span><h2>Our <em>Memories</em></h2>
+        <p class="body-copy centered">Beberapa ruang kecil untuk momen-momen yang ingin selalu kita ingat.</p>
+        <div class="memory-grid">
+          <div class="memory-tile"><img src="foto3.jpeg" alt="Kenangan pertama"><small>favorite moment</small></div>
+          <div class="memory-tile"><img src="foto5.jpeg" alt="Kenangan kedua"><small>little happiness</small></div>
+          <div class="memory-tile"><img src="foto4.jpeg" alt="Kenangan ketiga"><small>one to remember</small></div>
+          <div class="memory-tile"><img src="foto6.jpeg" alt="Kenangan ketiga"><small>one to remember</small></div>
+          <div class="memory-tile"><img src="foto8.jpeg" alt="Kenangan kelima"><small>one to remember</small></div>
+          <div class="memory-tile"><img src="foto2.jpeg" alt="Kenangan kelima"><small>one to remember</small></div>
+          <div class="memory-tile"><img src="foto1.jpeg" alt="Kenangan kelima"><small>one to remember</small></div>
+          <div class="memory-tile"> <img src="foto9.jpeg" alt="Kenangan kelima"><small>one to remember</small></div>
+          <div class="memory-tile"><img src="foto10.jpeg" alt="Kenangan kelima"><small>one to remember</small></div>
+        </div>
+      </article>
+      <button class="text-btn" data-go="menu">← Back to gifts</button>
+    </section>
+
+    <section class="screen" id="wish">
+      <article class="content-card wish-card">
+        <span class="eyebrow">one wish, just for you</span>
+        <h2>Make a <em>Wish</em></h2>
+        <div class="wish-moon">☾</div>
+        <p class="body-copy centered">Pejamkan mata sebentar, pikirkan satu harapan, lalu tekan tombol di bawah ini.</p>
+        <button class="primary-btn" id="wishButton">I made a wish ♡</button>
+        <p class="wish-result" id="wishResult" aria-live="polite"></p>
+      </article>
+      <button class="text-btn" data-go="menu">← Back to gifts</button>
+    </section>
+
+    <footer>made with ♡ · a little birthday surprise</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
